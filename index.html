@@ -204,11 +204,31 @@
     <script src="./static/demo_bot/chatbot-ui.js"></script>
 
     <script>
-        createChatBot(host = 'http://localhost:5005/webhooks/rest/webhook',
+        createChatBot(
+            host = 'http://localhost:5005/webhooks/rest/webhook',
             botLogo = "./static/img/bot-logo.png",
-            title = "AIDEN BOT", welcomeMessage ="Hello, I'm Aiden, guiding you through our resource allocation project for generic appointment bookings.",
-            inactiveMsg = "Thank you for reaching out. While I don't have a direct service for that specific request, I'm here to assist you. If you have other questions or need guidance on related topics, feel free to ask. Your understanding is greatly appreciated!"
-        )
+            title = "AIDEN BOT",
+            welcomeMessage = "Hello, I'm Aiden, guiding you through our resource allocation project for generic appointment bookings.",
+            inactiveMsg = "Thanks for reaching out to us. To provide your services, please click on one of the buttons below:<br><button class='btn btn-outline-primary' onclick='justBrowsing()'>Just Browsing</button> <button class='btn btn-outline-primary' onclick='signUp()'>Sign Up</button> <button class='btn btn-outline-primary' onclick='booking()'>Booking</button>"
+        );
+    
+        // Function to handle 'Just Browsing' button click
+        function justBrowsing() {
+            // Handle the 'Just Browsing' button click action
+            console.log("User clicked 'Just Browsing' button");
+        }
+    
+        // Function to handle 'Sign Up' button click
+        function signUp() {
+            // Handle the 'Sign Up' button click action
+            console.log("User clicked 'Sign Up' button");
+        }
+    
+        // Function to handle 'Booking' button click
+        function booking() {
+            // Handle the 'Booking' button click action
+            console.log("User clicked 'Booking' button");
+        }
     </script>
 
     <!-- <div class="aos-init" data-aos="zoom-in-up" data-aos-duration="3000"></div> -->
